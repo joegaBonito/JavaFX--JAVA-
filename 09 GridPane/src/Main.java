@@ -1,0 +1,52 @@
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+	Stage window;
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		window = primaryStage;
+		window.setTitle("JAVAFX - Joe");
+
+		GridPane grid = new GridPane();
+		grid.setPadding(new Insets(10,10,10,10));
+		grid.setVgap(8);
+		grid.setHgap(10);
+		
+		//Name Label
+		Label nameLabel = new Label("User Name");
+		GridPane.setConstraints(nameLabel,0,0);
+		
+		//Name Input
+		TextField nameInput = new TextField("Joey");
+		GridPane.setConstraints(nameInput,1,0);
+		
+		//Pass Label
+		Label passLabel = new Label("User Name");
+		GridPane.setConstraints(passLabel,0,1);
+		
+		//Name Input
+		TextField passInput = new TextField();
+		passInput.setPromptText("Password");
+		GridPane.setConstraints(passInput,1,1);
+		
+		Button button = new Button("Log In");
+		GridPane.setConstraints(button,1,2);
+		
+		grid.getChildren().addAll(nameLabel,nameInput,passLabel,passInput,button);
+		Scene scene = new Scene(grid,300,300);
+		window.setScene(scene);
+		window.show();
+	}
+}

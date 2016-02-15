@@ -1,0 +1,8 @@
+package snippet;
+
+public class Snippet {
+	2. (a) a* Note that the second state could be eliminated, since there's no path from it to a final state.
+	 (b) (ab ? aba)* Notice that we could eliminate the start state and make the remaining final state the start state and we'd
+	still get the same result.
+}
+

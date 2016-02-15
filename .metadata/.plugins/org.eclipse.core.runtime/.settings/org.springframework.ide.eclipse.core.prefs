@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.core.useChangeDetectionForJavaFiles=true
+org.springframework.ide.eclipse.core.useNonLockingClassLoader=false
+org.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.core.springvalidator=true
+org.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.core.springClasspath-org.springframework.ide.eclipse.core.springvalidator=true
